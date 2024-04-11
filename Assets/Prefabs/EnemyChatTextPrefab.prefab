@@ -34,7 +34,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2121375460038207694, guid: 104f30ff59baed34b8175b842d3c2a0e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 926.8119
+      value: 962.4438
       objectReference: {fileID: 0}
     - target: {fileID: 2121375460038207694, guid: 104f30ff59baed34b8175b842d3c2a0e, type: 3}
       propertyPath: m_SizeDelta.y
@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2121375460038207694, guid: 104f30ff59baed34b8175b842d3c2a0e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 463.40594
+      value: 481.22186
       objectReference: {fileID: 0}
     - target: {fileID: 2121375460038207694, guid: 104f30ff59baed34b8175b842d3c2a0e, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -91,6 +91,14 @@ PrefabInstance:
     - target: {fileID: 2796356521789022246, guid: 104f30ff59baed34b8175b842d3c2a0e, type: 3}
       propertyPath: m_Name
       value: EnemyChatTextPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 8968161634509934757, guid: 104f30ff59baed34b8175b842d3c2a0e, type: 3}
+      propertyPath: m_margin.x
+      value: 151.06714
+      objectReference: {fileID: 0}
+    - target: {fileID: 8968161634509934757, guid: 104f30ff59baed34b8175b842d3c2a0e, type: 3}
+      propertyPath: m_margin.z
+      value: 3.4388123
       objectReference: {fileID: 0}
     - target: {fileID: 8968161634509934757, guid: 104f30ff59baed34b8175b842d3c2a0e, type: 3}
       propertyPath: m_fontAsset

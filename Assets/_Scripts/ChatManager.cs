@@ -41,10 +41,10 @@ public class ChatManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 SendMessageToChat(playerName + ": " + chatBox.text, MessageType.playerMessage);
+
+                SendMessageToChat("Police: " + chatBox.text, MessageType.enemyMessage);
+
                 chatBox.text = "";
-
-                SendMessageToChat("Police: testing", MessageType.enemyMessage);
-
                 chatBox.ActivateInputField();
             }
         }
@@ -60,7 +60,7 @@ public class ChatManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                SendMessageToChat("You pressed the space bar!", MessageType.info);
+                SendMessageToChat("You pressed the space bar! testingtestingtestingtestingtestingtestingtestingtestingtestingtestingtesting", MessageType.info);
                 Debug.Log("space");
             }
         }
