@@ -9,6 +9,8 @@ public class MainMenuManger : MonoBehaviour
     [SerializeField] private Button optionsButton;
     [SerializeField] private Button exitButton;
 
+    [SerializeField] private OptionsMenu optionsMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +18,7 @@ public class MainMenuManger : MonoBehaviour
             //Loader.Load(Loader.Scene.GameScene);
         });
         optionsButton.onClick.AddListener(() => {
+            optionsMenu.Show();
         });
         exitButton.onClick.AddListener(() => {
             Debug.Log("Exited");
