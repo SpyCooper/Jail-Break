@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18345782, g: 0.22903574, b: 0.3058779, a: 1}
+  m_IndirectSpecularColor: {r: 0.18345828, g: 0.22903642, b: 0.30587935, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 493262823}
   - component: {fileID: 493262824}
   m_Layer: 0
-  m_Name: SoundManager
+  m_Name: MainMenuSoundManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -562,9 +562,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectsSource: {fileID: 1163256691}
   backgroundSource: {fileID: 1670925122}
-  backgroundMusic: {fileID: 8300000, guid: a89ce24d6c07de54582bb15691c7a4c3, type: 3}
-  sfx1: {fileID: 8300000, guid: e534cdb3a33fda241ad1979155bf0dff, type: 3}
-  sfx2: {fileID: 8300000, guid: fb40d9a741380c544b01c962e5fe5c8d, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: c28734dc41b0737438b5cc79a3fec685, type: 3}
+  mainSirenSFX: {fileID: 8300000, guid: 883ce0c9b6ae8464589868b096186612, type: 3}
+  distantSirenSFX1: {fileID: 8300000, guid: 547ea5befc36bea4fb64c4f2c0be6795, type: 3}
+  distantSirenSFX2: {fileID: 8300000, guid: 3c1c15c3916aa1b46824b3cb18493b30, type: 3}
 --- !u!1 &773400547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,7 +1587,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2530,15 +2531,39 @@ PrefabInstance:
       value: OptionsMenu
       objectReference: {fileID: 0}
     - target: {fileID: 3170460319626902947, guid: 73068ddc0f5b15a429cee2aaba69eae0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170460319626902947, guid: 73068ddc0f5b15a429cee2aaba69eae0, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096547039395657570, guid: 73068ddc0f5b15a429cee2aaba69eae0, type: 3}
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5096547039395657570, guid: 73068ddc0f5b15a429cee2aaba69eae0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5096547039395657570, guid: 73068ddc0f5b15a429cee2aaba69eae0, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516068960417941615, guid: 73068ddc0f5b15a429cee2aaba69eae0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5516068960417941615, guid: 73068ddc0f5b15a429cee2aaba69eae0, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516068960417941615, guid: 73068ddc0f5b15a429cee2aaba69eae0, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195438765602916468, guid: 73068ddc0f5b15a429cee2aaba69eae0, type: 3}
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6195438765602916468, guid: 73068ddc0f5b15a429cee2aaba69eae0, type: 3}
