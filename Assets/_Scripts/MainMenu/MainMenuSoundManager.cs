@@ -12,8 +12,8 @@ public class MainMenuSoundManager : MonoBehaviour
     [SerializeField] private AudioClip distantSirenSFX1;
     [SerializeField] private AudioClip distantSirenSFX2;
 
-    private float gameVolume = 0.5f;
-    private float musicVolume = 0.5f;
+    private float gameVolume;
+    private float musicVolume;
 
     private float sirenTimerMax = 10f;
     private float sirenTimer = 0f;
@@ -23,6 +23,9 @@ public class MainMenuSoundManager : MonoBehaviour
     {
         backgroundSource.clip = backgroundMusic;
         StartCoroutine(MainSiren());
+
+        SetGameVolume();
+        SetMusicVolume();
     }
 
     private void Update()
@@ -38,6 +41,16 @@ public class MainMenuSoundManager : MonoBehaviour
         }
     }
 
+    private void SetGameVolume()
+    {
+        gameVolume = GameManager.Instance.GetGameSoundVolume();
+    }
+
+    private void SetMusicVolume()
+    {
+        musicVolume = GameManager.Instance.GetMusicSoundVolume()/10f;
+    }
+
     public void PlaySoundEffect(AudioClip sfx)
     {
         effectsSource.PlayOneShot(sfx, gameVolume);
@@ -47,7 +60,6 @@ public class MainMenuSoundManager : MonoBehaviour
     {
         effectsSource.PlayOneShot(backgroundMusic, musicVolume);
     }
-
 
     private IEnumerator MainSiren()
     {
